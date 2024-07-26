@@ -11,31 +11,30 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/easy_to_use.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Our platform was designed for very fast and easy to use integrations.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Improved API & Convenient Documentation',
+    Svg: require('@site/static/img/improved_api.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Our API systems are easy to use and integrate.
+        Finscender allowed us to make documentations more convenient, easy to read and navigate.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Powerful SDKs in Popular PLs',
+    Svg: require('@site/static/img/sdk_use2.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <i>(coming soon...)</i> We made specific SDKs that are well tailored for most of popular programming languages.
+        Allowing developers to intigrate our payment system into their applications more faster and easier.
       </>
     ),
   },
