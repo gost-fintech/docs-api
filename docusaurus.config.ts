@@ -5,7 +5,7 @@ import type * as Preset from '@docusaurus/preset-classic';
 require('dotenv').config();
 
 const config: Config = {
-  title: 'AggrePay - Payment Aggregator',
+  title: process.env.TITLE,
   tagline: 'Payment Aggronauts: Navigating the Financial Galaxy with Ease and Fun!',
   favicon: 'img/favicon.ico',
   plugins: [
@@ -49,13 +49,13 @@ const config: Config = {
           editUrl:
             'https://github.com/gost-fintech/docs-api/tree/main/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/blog/',
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl:
+        //     'https://github.com/facebook/docusaurus/tree/main/blog/',
+        // },
         theme: {
           customCss: './src/css/custom.css',
         },
