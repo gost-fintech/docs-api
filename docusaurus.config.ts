@@ -10,7 +10,7 @@ const config: Config = {
   favicon: 'img/favicon.ico',
   plugins: [
     [
-    "docusaurus2-dotenv",
+    "docusaurus-plugin-dotenv",
       {
         path: "./.env", // The path to your environment variables.
         systemvars: true, // Set to true if you would rather load all system variables as well (useful for CI purposes)
@@ -34,10 +34,9 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en', 'ru'],
-  },
+//   i18n: {
+//     defaultLocale: 'en',
+//   },
 
   presets: [
     [
@@ -78,10 +77,6 @@ const config: Config = {
         },
         
         {to: '/blog', label: 'Blog', position: 'left'},
-        {
-            type: 'localeDropdown',
-            position: 'right'
-        },
         {
             type: 'docsVersionDropdown',
             position: 'right'
