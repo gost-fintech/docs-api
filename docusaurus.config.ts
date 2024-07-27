@@ -2,6 +2,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
+require('dotenv').config();
+
 const config: Config = {
   title: 'AggrePay - Payment Aggregator',
   tagline: 'Payment Aggronauts: Navigating the Financial Galaxy with Ease and Fun!',
@@ -16,7 +18,7 @@ const config: Config = {
     ]
   ],
   // Set the production url of your site here
-  url: 'https://docs.confettipay.com',
+  url: process.env.DOCUMENTATION_BASE_URL,
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
