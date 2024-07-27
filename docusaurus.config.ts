@@ -98,18 +98,10 @@ const config: Config = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
-              label: 'Confetti Pay',
-              href: 'https://confettipay.com/',
-            },
-            {
-              label: 'DeSend',
-              href: 'https://trade.desend.io/sign-in',
-            },
+            // {
+            //   label: 'Blog',
+            //   to: '/blog',
+            // }
             
           ],
         },
