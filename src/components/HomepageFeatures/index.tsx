@@ -24,7 +24,6 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Our API systems are easy to use and integrate.
-        Finscender allowed us to make documentations more convenient, easy to read and navigate.
       </>
     ),
   },
