@@ -6,7 +6,15 @@ const config: Config = {
   title: 'AggrePay - Payment Aggregator',
   tagline: 'Payment Aggronauts: Navigating the Financial Galaxy with Ease and Fun!',
   favicon: 'img/favicon.ico',
-
+  plugins: [
+    [
+    "docusaurus2-dotenv",
+      {
+        path: "./.env", // The path to your environment variables.
+        systemvars: true, // Set to true if you would rather load all system variables as well (useful for CI purposes)
+      },
+    ]
+  ],
   // Set the production url of your site here
   url: 'https://confettipay.com',
   // Set the /<baseUrl>/ pathname under which your site is served

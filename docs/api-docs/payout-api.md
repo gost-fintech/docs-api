@@ -2,14 +2,14 @@
 sidebar_position: 3
 sidebar_label: "Payout API"
 ---
+import APIRequestGateway from '@site/src/components/APIRequestGateway';
+
 # Payout API
 
 ### Payout Request
 
 To create a payout request, you have to make a HTTP POST request to `/api/v2/payouts` endpoint
-```
-POST: https://confettipay.com/api/v2/payouts HTTP 1.1
-```
+<APIRequestGateway endpoint="/api/v2/payouts HTTP 1.1" />
 
 **Request Body Example**
 ```json

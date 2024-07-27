@@ -2,15 +2,14 @@
 sidebar_position: 2
 sidebar_label: "Payment API"
 ---
+import APIRequestGateway from '@site/src/components/APIRequestGateway';
 
 # Payment API Documenatation
 
 ### Creation of Payment
 
 To create a new payment request, you have to make a HTTP POST request to `/api/v2/payments` endpoint
-```
-POST: https://confettipay.com/api/v2/payments HTTP 1.1
-```
+<APIRequestGateway endpoint="/api/v2/payments HTTP 1.1" />
 
 **Request Body Example**
 ```json
@@ -55,7 +54,7 @@ POST: https://confettipay.com/api/v2/payments HTTP 1.1
         "rate": 88.3,
         "bankName": "Сбербанк"
     },
-    "url": "https://confettipay.com/invoice/1/66a3897d0820b"
+    "url": "https://example.com/invoice/1/66a3897d0820b"
 }
 ```
 
@@ -81,9 +80,7 @@ POST: https://confettipay.com/api/v2/payments HTTP 1.1
 ### Status of Payment
 
 To get the status of the specific payment, you have to make a HTTP POST request to `/api/v2/status` endpoint.
-```
-POST: https://confettipay.com/api/v2/status HTTP 1.1
-```
+<APIRequestGateway endpoint="/api/v2/status HTTP 1.1" />
 
 **Request Body Example**
 ```json
